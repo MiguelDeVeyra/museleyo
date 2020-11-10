@@ -1,0 +1,150 @@
+.mural-header {
+  background-image: url("./../assets/images/muralGallery.png");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  //   style
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  h1 {
+    font-size: 7em;
+    font-weight: lighter;
+    @media (max-width: 568px) {
+      font-size: 3em;
+    }
+  }
+  p {
+    margin-top: 2em;
+    max-width: 38em;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: $ibmPlex;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    @media (max-width: 568px) {
+      font-size: 1em;
+      padding: 0 1em;
+    }
+  }
+}
+
+.events-section {
+  padding: 8em 5vw;
+  .header-text-events {
+    font-family: $ibmPlex;
+    letter-spacing: 0.3em;
+    font-size: 1.25em;
+    color: $primaryColor;
+  }
+  .events-content-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    @media (max-width: 568px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container {
+      display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      width: 45%;
+      @media (max-width: 568px) {
+        width: 90%;
+        margin-bottom: 2em;
+      }
+      img {
+        max-height: 500px;
+        @media (max-width: 568px) {
+          max-height: 300px;
+        }
+      }
+    }
+    .events-text {
+      display: flex;
+      flex-direction: column;
+      padding: 0 5em;
+      @media (max-width: 568px) {
+        max-width: 90%;
+        padding: 0 1em;
+      }
+      h1 {
+        font-size: 4em;
+        font-weight: lighter;
+        color: $primaryColor;
+        @media (max-width: 568px) {
+          font-size: 1.8em;
+        }
+      }
+      .date {
+        font-weight: lighter;
+        color: $primaryColor;
+        font-family: $ibmPlex;
+        letter-spacing: 0.005em;
+        padding: 2em 0;
+      }
+      .events-desc {
+        max-width: 80%;
+        letter-spacing: 0.09em;
+        font-family: $ibmPlex;
+        line-height: 35px;
+        @media (max-width: 568px) {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}
+
+.archives-section {
+  .archive-items {
+    .archive-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid $primaryColor;
+      @media (max-width: 568px) {
+        flex-direction: column;
+        justify-content: center;
+        border-top: none;
+        padding: 0 1em;
+        text-align: center;
+      }
+      .archive-item-text-container {
+        padding-left: 10em;
+        width: 100%;
+        @media (max-width: 568px) {
+          margin: 1em 0;
+          padding-left: 0;
+        }
+        .text-holder {
+          h1 {
+            color: $primaryColor;
+            font-weight: lighter;
+            margin-bottom: 0.3em;
+          }
+          p {
+            font-family: $ibmPlex;
+            letter-spacing: 0.005em;
+          }
+        }
+      }
+      .archive-item-image {
+        img {
+          max-height: 262px;
+          width: 556px;
+          @media (max-width: 568px) {
+            max-width: 273px;
+          }
+        }
+      }
+    }
+  }
+}

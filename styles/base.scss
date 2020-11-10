@@ -1,0 +1,32 @@
+// Colors
+$primaryColor: #8d0205;
+$secondaryColor: #0b1029;
+
+// fonts
+$ibmPlex: "IBM Plex Sans";
+$playfairDisplay: "Playfair Display";
+
+// removes any default styling
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: $playfairDisplay;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+// mixins
+
+// imports
+@import "./navbar";
+@import "./landingPage";
+@import "./home";
+@import "./footer";
+@import "./collectionsExhibits";
