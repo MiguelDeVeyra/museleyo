@@ -57,6 +57,10 @@ nav .items-container {
   font-family: "IBM Plex Sans" !important;
 }
 
+nav .items-container.black {
+  color: black;
+}
+
 nav .items-container .item {
   font-size: 0.8em;
   padding: 0 2em;
@@ -891,5 +895,435 @@ nav .items-container .item a {
   .archives-section .archive-items .archive-item .archive-item-image img {
     max-width: 273px;
   }
+}
+
+.store-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 90vh;
+  max-width: 100vw;
+  overflow: hidden;
+  margin-top: 10vh;
+}
+
+@media (max-width: 569px) {
+  .store-header {
+    min-height: 40vh;
+  }
+}
+
+.store-header .text-header {
+  margin-top: 2em;
+}
+
+.store-header .text-header h1 {
+  color: #8d0205;
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.store-header .image-holder img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.store-header .image-description {
+  text-align: center;
+  max-width: 30vw;
+  margin-top: 1em;
+}
+
+@media (max-width: 569px) {
+  .store-header .image-description {
+    max-width: none;
+  }
+}
+
+.store-header .image-description h3 {
+  font-size: 1.5em;
+  color: #8d0205;
+  margin-bottom: 0.5em;
+}
+
+.store-header .image-description p {
+  font-family: "IBM Plex Sans";
+}
+
+.store-header .image-description button {
+  margin-top: 1em;
+  padding: 0.8em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 0.15em;
+  color: #8d0205;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #8d0205), color-stop(50%, white));
+  background: linear-gradient(to right, #8d0205 50%, white 50%);
+  background-size: 200% 105%;
+  background-position: right bottom;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.store-header .image-description button:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+
+.departments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10em;
+  padding: 0 5vw;
+  min-height: 100vh;
+}
+
+.departments div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+@media (max-width: 569px) {
+  .departments div {
+    width: 100%;
+    min-width: 90vw;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.departments .department-title h1 {
+  color: #8d0205;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.departments .department-title p {
+  margin-top: 1em;
+  font-family: "IBM Plex Sans";
+  max-width: 30em;
+}
+
+.departments .image-container img {
+  padding: 20px;
+  margin: 0 auto;
+  border: 50px;
+  max-height: 403px;
+  max-width: 403px;
+}
+
+@media (max-width: 569px) {
+  .departments .image-container img {
+    max-height: 303px;
+    max-width: 303px;
+  }
+}
+
+.collections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #8d0205;
+  color: #fff;
+  min-height: 20vh;
+  margin-top: 15vh;
+}
+
+.collections h1 {
+  margin-top: 10vh;
+  font-size: 3.5em;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+}
+
+.collections p {
+  margin-top: 1em;
+  max-width: 25em;
+  margin-bottom: 10vh;
+  font-family: "IBM Plex Sans";
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+}
+
+.featured-collections {
+  margin-top: 15vh;
+  padding: 0 5vw;
+  min-height: 100vh;
+}
+
+.featured-collections .featured-header {
+  color: #8d0205;
+}
+
+.featured-collections .featured-header h3 {
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+.featured-collections .featured-header h1 {
+  font-size: 2.5em;
+}
+
+.featured-collections .product-sample {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5em;
+}
+
+.featured-collections .product-sample div {
+  width: 50%;
+}
+
+@media (max-width: 569px) {
+  .featured-collections .product-sample div {
+    min-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.featured-collections .product-sample .prod-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featured-collections .product-sample .prod-img-container img {
+  max-height: 403px;
+  max-width: 403px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 569px) {
+  .featured-collections .product-sample .prod-img-container img {
+    max-height: 303px;
+    max-width: 303px;
+    margin-bottom: 1em;
+  }
+}
+
+.featured-collections .product-sample .prod-description {
+  font-family: "IBM Plex Sans";
+}
+
+.featured-collections .product-sample .prod-description h1 {
+  color: #8d0205;
+}
+
+.featured-collections .product-sample .prod-description label {
+  color: #5f5f5f;
+}
+
+.featured-collections .product-sample .prod-description h4 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.featured-collections .product-sample .prod-description p {
+  font-size: 0.9em;
+}
+
+.featured-collections .product-sample .prod-description h2 {
+  color: #535353;
+  padding: 0.5em 0;
+}
+
+.featured-collections .product-sample .prod-description button {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 1em 1.5em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 2em;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  color: #fff;
+  background: #8d0205;
+}
+
+.featured-collections .product-sample .prod-description button.wish {
+  background: #a66249;
+}
+
+.samples {
+  padding: 0 5vw;
+  min-height: 100vh;
+}
+
+.samples .row-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.samples .row-one .text {
+  max-width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "IBM Plex Sans";
+  color: #8d0205;
+}
+
+@media (max-width: 569px) {
+  .samples .row-one .text {
+    min-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 3em 0;
+  }
+}
+
+.samples .row-one .text h1 {
+  font-size: 1.5em;
+}
+
+.samples .row-one .text .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+}
+
+.samples .row-one .text .item h3 {
+  width: 10em;
+  font-weight: bold;
+}
+
+.samples .row-one .img-cont {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 569px) {
+  .samples .row-one .img-cont {
+    width: 100%;
+  }
+}
+
+.samples .row-one .img-cont img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 244px;
+  max-height: 245px;
+}
+
+@media (min-width: 569px) {
+  .samples .row-one .img-cont img {
+    margin-left: 7.4%;
+  }
+}
+
+@media (max-width: 569px) {
+  .samples .row-one .img-cont img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 3em auto;
+  }
+}
+
+.samples .other-rows {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.samples .other-rows img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 244px;
+  max-height: 245px;
+}
+
+@media (max-width: 569px) {
+  .samples .other-rows img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 3em auto;
+  }
+}
+
+.gilders-sect {
+  border-top: 2px solid #8d0205;
 }
 /*# sourceMappingURL=base.css.map */
