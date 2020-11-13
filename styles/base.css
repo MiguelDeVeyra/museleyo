@@ -38,9 +38,16 @@ nav {
   left: 0;
   right: 0;
   padding: 0 5vw;
-  min-height: 10vh;
+  max-height: 15vh;
   z-index: 10;
   color: #fff;
+}
+
+nav.black {
+  -webkit-transition: 0.75s ease;
+  transition: 0.75s ease;
+  background-color: #fff;
+  color: black;
 }
 
 nav .items-container {
@@ -57,18 +64,30 @@ nav .items-container {
   font-family: "IBM Plex Sans" !important;
 }
 
-nav .items-container.black {
-  color: black;
-}
-
 nav .items-container .item {
-  font-size: 0.8em;
+  font-size: 12px;
   padding: 0 2em;
 }
 
-nav .items-container .item a {
-  text-decoration: none;
+nav .items-container .item .routerLink {
+  background: transparent;
+  border: none;
   color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+nav .items-container .item .routerLink.active {
+  outline: none;
+}
+
+nav .items-container .item .routerLink.focus {
+  outline: none;
+}
+
+nav .items-container .item .routerLink.black {
+  color: black;
 }
 
 .hero-header {
@@ -1292,6 +1311,7 @@ nav .items-container .item a {
 
 .samples .other-rows {
   margin: 2em 0;
+  margin-bottom: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1325,5 +1345,303 @@ nav .items-container .item a {
 
 .gilders-sect {
   border-top: 2px solid #8d0205;
+  padding: 0 5vw;
+  padding-top: 8em;
+  min-height: 100vh;
+  padding-bottom: 5em;
+}
+
+.gilders-sect .collections-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 90vw;
+}
+
+.gilders-sect .collections-row .row-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gilders-sect .collections-row .row-header h1 {
+  color: #8d0205;
+  text-align: center;
+  max-width: 5em;
+}
+
+.gilders-sect .collections-row .row-header p {
+  margin-top: 1em;
+  text-align: center;
+  max-width: 10em;
+}
+
+.gilders-sect .collections-row .glider-container-dev {
+  max-width: 70vw;
+}
+
+.gilders-sect .collections-row .glider-container-dev .glider .glider-track {
+  width: 100%;
+}
+
+.gilders-sect .collections-row .glider-container-dev .glider .glider-track .glider-slide {
+  min-height: 10vh;
+}
+
+.gilders-sect .divider-sect {
+  margin: 100px auto;
+  max-width: 80%;
+  border-bottom: 3px solid #8d0205;
+}
+
+.contact-container {
+  margin-top: 20vh;
+  padding: 0 5vw;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-container div {
+  width: 50%;
+}
+
+.contact-container .form-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-container .form-header button {
+  font-family: "IBM Plex Sans";
+  font-size: 0.8em;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin: 0;
+  font-weight: bold;
+  padding: 1em 1.5em;
+}
+
+.contact-container .form-header button {
+  cursor: pointer;
+}
+
+.contact-container .form-header .gen-inq {
+  background: #8d0205;
+  color: #fff;
+}
+
+.contact-container .form-header .sched-vist {
+  background: rgba(141, 2, 5, 0.26);
+  color: #8d0205;
+}
+
+.contact-container .form-header .donate {
+  background: #fbe4e4;
+  color: #8d0205;
+}
+
+.contact-container .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #8d0205;
+  width: 100%;
+  height: 70vh;
+}
+
+.contact-container .form-group input {
+  border: none;
+  width: 80%;
+  height: 3em;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  text-indent: 10px;
+  color: #8d0205;
+}
+
+.contact-container .form-group input:focus {
+  outline: none;
+}
+
+.contact-container .form-group input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8d0205;
+}
+
+.contact-container .form-group input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8d0205;
+}
+
+.contact-container .form-group input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8d0205;
+}
+
+.contact-container .form-group input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8d0205;
+}
+
+.contact-container .form-group select {
+  border: none;
+  width: 80%;
+  height: 3em;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  text-indent: 10px;
+  background-color: #fff;
+  color: #8d0205;
+}
+
+.contact-container .form-group select:focus {
+  outline: none;
+}
+
+.contact-container .form-group select option {
+  background-color: #fff;
+  border: none;
+  width: 80px;
+  height: 3em;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  text-indent: 10px;
+}
+
+.contact-container .form-group textarea {
+  width: 80%;
+  border-radius: 5px;
+  resize: none;
+  text-indent: 10px;
+  padding-top: 10px;
+}
+
+.contact-container .form-group textarea:focus {
+  outline: none;
+}
+
+.contact-container .form-group textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8d0205;
+}
+
+.contact-container .form-group textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8d0205;
+}
+
+.contact-container .form-group textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8d0205;
+}
+
+.contact-container .form-group textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8d0205;
+}
+
+.contact-container .form-group .btn-wrapper {
+  width: 80%;
+}
+
+.contact-container .form-group .btn-wrapper button {
+  margin-top: 2em;
+  background: transparent;
+  border: 2px solid white;
+  padding: 1em 2.5em;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #8d0205));
+  background: linear-gradient(to right, #fff 50%, #8d0205 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.contact-container .form-group .btn-wrapper button:hover {
+  background-position: left bottom;
+  color: #8d0205;
+}
+
+.contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contact-details h1 {
+  text-align: right;
+}
+
+.contact-details p {
+  margin-top: 2em;
+  font-family: "IBM Plex Sans";
+  text-align: right;
+  font-size: 0.8em;
+}
+
+.contact-details .soc-icons {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact-details .soc-icons svg {
+  margin-left: 1em;
+}
+
+.contact-details img {
+  margin-top: 3em;
+  width: 371px;
+  height: 276px;
 }
 /*# sourceMappingURL=base.css.map */

@@ -1,0 +1,179 @@
+.contact-container {
+  margin-top: 20vh;
+  padding: 0 5vw;
+  flex: wrap;
+  display: flex;
+  div {
+    width: 50%;
+  }
+
+  .form-header {
+    width: 100%;
+    display: flex;
+    button {
+      font-family: $ibmPlex;
+      font-size: 0.8em;
+      outline: none;
+      border: none;
+      background: transparent;
+      margin: 0;
+      font-weight: bold;
+      padding: 1em 1.5em;
+    }
+    button {
+      cursor: pointer;
+    }
+    .gen-inq {
+      background: $primaryColor;
+      color: #fff;
+    }
+    .sched-vist {
+      background: rgba(141, 2, 5, 0.26);
+      color: $primaryColor;
+    }
+    .donate {
+      background: #fbe4e4;
+      color: $primaryColor;
+    }
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $primaryColor;
+    width: 100%;
+    height: 70vh;
+    input {
+      border: none;
+      width: 80%;
+      height: 3em;
+      margin-bottom: 2em;
+      border-radius: 5px;
+      text-indent: 10px;
+      color: $primaryColor;
+
+      &:focus {
+        outline: none;
+      }
+      &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $primaryColor;
+      }
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $primaryColor;
+      }
+      &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $primaryColor;
+      }
+      &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $primaryColor;
+      }
+    }
+
+    select {
+      border: none;
+      width: 80%;
+      height: 3em;
+      margin-bottom: 2em;
+      border-radius: 5px;
+      text-indent: 10px;
+      background-color: #fff;
+      color: $primaryColor;
+      &:focus {
+        outline: none;
+      }
+      option {
+        background-color: #fff;
+        border: none;
+        width: 80px;
+        height: 3em;
+        margin-bottom: 2em;
+        border-radius: 5px;
+        text-indent: 10px;
+      }
+    }
+
+    textarea {
+      width: 80%;
+      border-radius: 5px;
+      resize: none;
+      text-indent: 10px;
+      padding-top: 10px;
+      &:focus {
+        outline: none;
+      }
+      &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $primaryColor;
+      }
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $primaryColor;
+      }
+      &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $primaryColor;
+      }
+      &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $primaryColor;
+      }
+    }
+    .btn-wrapper {
+      width: 80%;
+      button {
+        margin-top: 2em;
+        background: transparent;
+        border: 2px solid white;
+        padding: 1em 2.5em;
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        background: linear-gradient(to right, #fff 50%, $primaryColor 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.5s ease-out;
+        &:hover {
+          background-position: left bottom;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  h1 {
+    text-align: right;
+  }
+  p {
+    margin-top: 2em;
+    font-family: $ibmPlex;
+    text-align: right;
+    font-size: 0.8em;
+  }
+
+  .soc-icons {
+    margin-top: 2em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    svg {
+      margin-left: 1em;
+    }
+  }
+
+  img {
+    margin-top: 3em;
+    width: 371px;
+    height: 276px;
+  }
+}

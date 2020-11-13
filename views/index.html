@@ -6,23 +6,48 @@
     <link rel="stylesheet" href="./../styles/base.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>    <title>Negros Museum</title>
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+    <link rel="icon" href="./../assets/images/logo.png">
 
 </head>
   <body>
     <!-- navbar here -->
-    <nav>
+    <nav id="navbar" class="">
         <div class="logo-container">
             <a href="index.html">
                 <img src="./../assets/images/logo.png" alt="">
             </a>
         </div>
         <div class="items-container">
-            <div class="item">ABOUT</div>
-            <div class="item">COLLLECTIONS & EXHIBITS</div>
-            <div class="item">STORE</div>
-            <div class="item">CONTACT US</div>
+            <div class="item">
+                <a href="#" >
+                <button class="routerLink">  
+                    ABOUT
+                </button>
+                </a> 
+            </div>
+            <div class="item">
+                <a href="collectionsExhiits.html" >
+                <button class="routerLink">  
+                    COLLLECTIONS & EXHIBITS
+                </button>
+                </a> 
+            </div>
+            <div class="item">
+                <a href="store.html" >
+                <button class="routerLink">  
+                    STORE
+                </button>
+                </a>
+            </div>
+            <div class="item">
+                <a href="contacts.html" >
+                <button class="routerLink">  
+                    CONTACT US
+                </button>
+                </a> 
+            </div>
         </div>
-    </nav>
+        </nav>
 
     <!-- Hero Header -->
     <div class="hero-header">
@@ -45,5 +70,7 @@
             </a>
         </div>
     </div>
+    <script src="./../javascript/navbar.js"></script>
+
   </body>
 </html>
