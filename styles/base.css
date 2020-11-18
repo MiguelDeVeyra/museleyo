@@ -69,17 +69,41 @@ nav .items-container .item {
   padding: 0 2em;
 }
 
+nav .items-container .item a {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-decoration: none;
+}
+
 nav .items-container .item .routerLink {
   background: transparent;
   border: none;
+  display: block;
   color: #fff;
   font-size: 12px;
   cursor: pointer;
   outline: none;
+  padding: 2em 0;
+  text-align: center;
+  text-decoration: none;
 }
 
-nav .items-container .item .routerLink.active {
-  outline: none;
+nav .items-container .item .routerLink::before {
+  content: "";
+  display: block;
+  position: relative;
+  border-top: 3px solid transparent;
+  padding-top: 10px;
+  width: 0;
+  left: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+nav .items-container .item .routerLink:hover::before {
+  display: block;
+  border-top: 3px solid white;
+  width: 100%;
 }
 
 nav .items-container .item .routerLink.focus {
@@ -88,6 +112,24 @@ nav .items-container .item .routerLink.focus {
 
 nav .items-container .item .routerLink.black {
   color: black;
+}
+
+nav .items-container .item .routerLink.black::before {
+  content: "";
+  display: block;
+  position: relative;
+  border-top: 3px solid transparent;
+  padding-top: 10px;
+  width: 0;
+  left: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+nav .items-container .item .routerLink.black:hover::before {
+  display: block;
+  border-top: 3px solid black;
+  width: 100%;
 }
 
 .hero-header {
@@ -1440,9 +1482,6 @@ nav .items-container .item .routerLink.black {
   margin: 0;
   font-weight: bold;
   padding: 1em 1.5em;
-}
-
-.contact-container .form-header button {
   cursor: pointer;
 }
 

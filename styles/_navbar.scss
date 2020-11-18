@@ -28,21 +28,59 @@ nav {
     .item {
       font-size: 12px;
       padding: 0 2em;
+      a {
+        text-emphasis: none;
+        text-decoration: none;
+      }
       .routerLink {
         background: transparent;
         border: none;
+        display: block;
         color: #fff;
         font-size: 12px;
         cursor: pointer;
         outline: none;
-        &.active {
-          outline: none;
+        padding: 2em 0;
+        text-align: center;
+        text-decoration: none;
+        // border-top: 3px solid transparent;
+        &::before {
+          content: "";
+          display: block;
+          position: relative;
+          border-top: 3px solid transparent;
+          padding-top: 10px;
+          width: 0;
+          left: 0;
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease;
+        }
+        &:hover::before {
+          display: block;
+          border-top: 3px solid white;
+          width: 100%;
         }
         &.focus {
           outline: none;
         }
         &.black {
           color: black;
+          &::before {
+            content: "";
+            display: block;
+            position: relative;
+            border-top: 3px solid transparent;
+            padding-top: 10px;
+            width: 0;
+            left: 0;
+            -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+          }
+          &:hover::before {
+            display: block;
+            border-top: 3px solid black;
+            width: 100%;
+          }
         }
       }
     }
